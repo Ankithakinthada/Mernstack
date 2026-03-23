@@ -1,0 +1,41 @@
+<!DOCtype html>
+<html>
+<head>
+<title>Different Output Methods</title>
+<style>
+body {
+	font-family: Arial;
+	text-align: center;
+}
+/* Responsive message */
+@media screen and (max-width: 600px) {
+    body {
+	background-color: lightyellow;
+  }
+}
+</style>
+<script>
+function showResponsiveMessage() {
+	//innerHTML output
+        document.getElementId("output").innerHTML = "This page is now in MOBILE VIEW (Responsive Design)";
+}
+
+function show404Error() {
+    // alert output
+	alert("404 Error: Page Not Found");
+}
+
+function showConsoleMessage() {
+    // console output 
+	console.log("User clicked help option");
+}
+</script>
+</head>
+
+<body onload="showResponsiveMessage()">
+<h2>Different Output Methods</h2>
+<button onclick="show404Error()">Open Invalid Page</button>
+<button onclick="showConsoleMessage()">Help</button>
+<p id="output"></p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCtype html>
+<html>
+<head>
+<title>Combinator Selectors</title>
+
+<style> 
+div p {
+  color : blue;
+}
+
+
+div > h2 {
+   color : red;
+}
+
+
+h1 + p {
+    color : green;
+}
+
+
+h1 ~ p {
+   font-weight: bold;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div>
+ <h2>Child Selector</h2>
+ <p>Descendant Selector example</p>
+</div>
+
+<h1>Heading</h1>
+<p>Adjacent sibling</p>
+<p>General Sibling</p>
+
+</body>
+</html>
