@@ -1,0 +1,17 @@
+10(b) JSX Program 
+Replace again with: 
+function App() { 
+ 
+  const name = "Manikanta"; 
+  const marks = 85; 
+ 
+  return ( 
+    <div> 
+      <h1>Hello {name}</h1> 
+      <h2>Your Marks: {marks}</h2> 
+      <h3>{marks > 50 ? "Pass" : "Fail"}</h3> 
+    </div> 
+  ); 
+} 
+ 
+export default App; 
